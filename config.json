@@ -1,0 +1,45 @@
+{
+    "chains": [{
+        "name": "relay",
+        "typ": "forceio",
+        "startNum": 10000,
+        "p2p": [
+            "127.0.0.1:8101","127.0.0.1:8102","127.0.0.1:8103",
+            "127.0.0.1:8104","127.0.0.1:8105","127.0.0.1:8104",
+            "127.0.0.1:8107","127.0.0.1:8108","127.0.0.1:8109",
+            "127.0.0.1:8110","127.0.0.1:8111","127.0.0.1:8112",
+            "127.0.0.1:8113","127.0.0.1:8114","127.0.0.1:8115",
+            "127.0.0.1:8116","127.0.0.1:8117","127.0.0.1:8118"
+        ],
+        "cfg": {
+            "url": "http://127.0.0.1:8001",
+            "pri":["5KYQvUwt6vMpLJxqg4jSQNkuRfktDHtYDp8LPoBpYo8emvS1GfG", "5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3"]
+        }
+    }, {
+        "name": "side",
+        "typ": "eosforce",
+        "startNum": 10000,
+        "p2p": [
+            "192.168.2.180:9001","192.168.2.180:9002","192.168.2.180:9003"
+        ],
+        "cfg": {
+            "url": "http://192.168.2.180:8001",
+            "pri":["5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3"]
+        }
+    }],
+
+    "transfer": [{
+        "sideacc": "transferc",
+        "relayacc": "testc"
+    }],
+
+    "watcher": [{
+        "sideacc": "testc",
+        "relayacc": "biosbpc"
+    }],
+
+    "relay":{
+        "chain":"eosforce",
+        "relaycontract":"rs"
+    }
+}
