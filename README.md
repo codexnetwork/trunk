@@ -5,14 +5,22 @@ Trunk is part of the Codex muit-chain system.
 Some trunk node provides a decentralized state synchronization channel between the two chains. 
 In particular, all chains in codex muit-chain system will have a channel by trunk nodes to codex.relay chain, so every chains can share their state to others by this.
 
-## Contents
-
 - [Codex Trunk](#codex-trunk)
-  - [Contents](#contents)
+  - [Introduction](#introduction)
+    - [Design](#design)
+    - [Types](#types)
+    - [Governance](#governance)
   - [Installation](#installation)
   - [Config](#config)
-  - [Types of the trunk](#types-of-the-trunk)
 
+
+## Introduction
+
+### Design
+
+### Types
+
+### Governance
 
 ## Installation
 
@@ -42,5 +50,3 @@ trunk -cfg /path/to/config.json
 ```
 
 ## Config
-
-## Types of the trunk 
