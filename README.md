@@ -16,6 +16,31 @@ In particular, all chains in codex muit-chain system will have a channel by trun
 
 ## Installation
 
+First build the trunk
+
+```bash
+go get -u -v github.com/codexnetwork/trunk
+cd $GOPATH/src/github.com/codexnetwork/trunk
+go get -v ./...
+go install
+```
+
+You can use `-h` to get params for trunk:
+
+```
+trunk -h
+Usage of ./trunk:
+  -cfg string
+    	config file path (default "./config.json")
+  -d	run in debug mode
+```
+
+After make a config, can start trunk by:
+
+```bash
+trunk -cfg /path/to/config.json
+```
+
 ## Config
 
 ## Types of the trunk 
