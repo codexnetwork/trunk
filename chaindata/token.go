@@ -15,10 +15,10 @@ type MapTokenStat struct {
 	Chain                    eos.Name        `json:"chain"`
 	SideAccount              eos.AccountName `json:"side_account"`
 	SideAction               eos.ActionName  `json:"side_action"`
-	RewardsPool              eos.Asset       `json:"rewards_pool"`
 	TotalMineage             eos.Int128      `json:"total_mineage"`
 	TotalMineageUpdateHeight uint32          `json:"total_mineage_update_height"`
-	TotalPendingMineage      eos.Int64       `json:"total_pending_mineage"`
+	RewardScope              uint64          `json:"reward_scope"`
+	RewardSize               int32           `json:"reward_size"`
 }
 
 // GetTokenMapDatas get token map stat data from table
