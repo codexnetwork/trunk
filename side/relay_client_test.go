@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/cihub/seelog"
-	"github.com/fanyang1988/force-go/types"
+	"github.com/codexnetwork/codex-go/types"
 )
 
 func initCfgForTest() {

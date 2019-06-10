@@ -2,8 +2,8 @@ package chaindata
 
 import (
 	eos "github.com/eosforce/goforceio"
-	forceio "github.com/fanyang1988/force-go/forceio"
-	"github.com/fanyang1988/force-go/types"
+	forceio "github.com/codexnetwork/codex-go/forceio"
+	"github.com/codexnetwork/codex-go/types"
 	"github.com/pkg/errors"
 )
 

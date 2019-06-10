@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/fanyang1988/force-block-ev/blockdb"
-	"github.com/fanyang1988/force-go/types"
+	"github.com/codexnetwork/codex-go/types"
 )
 
 type handlerImp struct {

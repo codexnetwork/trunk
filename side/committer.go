@@ -4,10 +4,9 @@ import (
 	"strings"
 	"time"
 
-	force "github.com/fanyang1988/force-go"
-	"github.com/fanyang1988/force-go/config"
-	"github.com/fanyang1988/force-go/types"
-
+	gocodex "github.com/codexnetwork/codex-go"
+	"github.com/codexnetwork/codex-go/config"
+	"github.com/codexnetwork/codex-go/types"
 	"github.com/codexnetwork/trunk/cfg"
 	"github.com/codexnetwork/trunk/chainhandler"
 	"github.com/codexnetwork/trunk/logger"
@@ -63,7 +62,7 @@ func (c *commitWorker) Start(cfg *config.ConfigData, sideChainType types.ClientT
 	c.works = make(chan commitParam, 4096)
 
 	for {
-		client, err := force.NewClient(types.FORCEIO, cfg)
+		client, err := gocodex.NewClient(types.FORCEIO, cfg)
 		if err != nil {
 			logger.LogError("create client error, need retry", err)
 			time.Sleep(1 * time.Second)

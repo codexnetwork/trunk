@@ -4,7 +4,7 @@ import (
 	"errors"
 
 	"github.com/fanyang1988/force-block-ev/blockdb"
-	"github.com/fanyang1988/force-go/p2p"
+	"github.com/codexnetwork/codex-go/p2p"
 
 	"github.com/codexnetwork/trunk/cfg"
 	"github.com/codexnetwork/trunk/chainhandler"

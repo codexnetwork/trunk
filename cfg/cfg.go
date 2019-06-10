@@ -3,8 +3,8 @@ package cfg
 import (
 	"errors"
 
-	"github.com/fanyang1988/force-go/config"
-	"github.com/fanyang1988/force-go/types"
+	"github.com/codexnetwork/codex-go/config"
+	"github.com/codexnetwork/codex-go/types"
 
 	"github.com/codexnetwork/trunk/logger"
 )

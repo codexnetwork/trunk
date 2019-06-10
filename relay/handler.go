@@ -3,7 +3,7 @@ package relay
 import (
 	"fmt"
 
-	"github.com/fanyang1988/force-go/types"
+	"github.com/codexnetwork/codex-go/types"
 	"go.uber.org/zap"
 
 	"github.com/codexnetwork/trunk/cfg"
