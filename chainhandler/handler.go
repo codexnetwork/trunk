@@ -3,8 +3,7 @@ package chainhandler
 import (
 	"sync"
 
-	"github.com/fanyang1988/force-go/types"
-
+	"github.com/codexnetwork/codex-go/types"
 	"github.com/codexnetwork/trunk/logger"
 )
 

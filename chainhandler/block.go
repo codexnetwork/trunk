@@ -3,7 +3,7 @@ package chainhandler
 import (
 	"encoding/binary"
 
-	"github.com/fanyang1988/force-go/types"
+	"github.com/codexnetwork/codex-go/types"
 )
 
 type Block struct {

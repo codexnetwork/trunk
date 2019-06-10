@@ -4,16 +4,16 @@ import (
 	"strings"
 	"time"
 
-	force "github.com/fanyang1988/force-go"
-	"github.com/fanyang1988/force-go/config"
-	forceio "github.com/fanyang1988/force-go/forceio"
-	"github.com/fanyang1988/force-go/types"
+	eos "github.com/eosforce/goforceio"
 	"github.com/pkg/errors"
 	"go.uber.org/zap"
 
+	gocodex "github.com/codexnetwork/codex-go"
+	"github.com/codexnetwork/codex-go/config"
+	forceio "github.com/codexnetwork/codex-go/forceio"
+	"github.com/codexnetwork/codex-go/types"
 	"github.com/codexnetwork/trunk/cfg"
 	"github.com/codexnetwork/trunk/logger"
-	eos "github.com/eosforce/goforceio"
 )
 
 // client client to force relay chain
@@ -26,7 +26,7 @@ func CreateClient(typ types.ClientType, cfg *config.ConfigData) {
 		logger.Logger().Info("create client cfg",
 			zap.String("url", cfg.URL),
 			zap.String("chainID", cfg.ChainID))
-		client, err = force.NewClient(typ, cfg)
+		client, err = gocodex.NewClient(typ, cfg)
 		if err != nil {
 			logger.LogError("create client error, need retry", err)
 			time.Sleep(1 * time.Second)

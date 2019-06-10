@@ -1,7 +1,7 @@
 package side
 
 import (
-	"github.com/fanyang1988/force-go/types"
+	"github.com/codexnetwork/codex-go/types"
 
 	"github.com/codexnetwork/trunk/chainhandler"
 	forceio "github.com/eosforce/goforceio"

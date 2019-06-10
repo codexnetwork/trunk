@@ -3,12 +3,12 @@ package relay
 import (
 	"time"
 
-	"github.com/fanyang1988/force-go/types"
-
-	"github.com/codexnetwork/trunk/logger"
-	force "github.com/fanyang1988/force-go"
-	"github.com/fanyang1988/force-go/config"
 	"go.uber.org/zap"
+
+	"github.com/codexnetwork/codex-go/types"
+	gocodex "github.com/codexnetwork/codex-go"
+	"github.com/codexnetwork/codex-go/config"
+	"github.com/codexnetwork/trunk/logger"
 )
 
 // client client to force relay chain
@@ -21,7 +21,7 @@ func CreateSideClient(typ types.ClientType, cfg *config.ConfigData) {
 		logger.Logger().Info("create client cfg",
 			zap.String("url", cfg.URL),
 			zap.String("chainID", cfg.ChainID))
-		client, err = force.NewClient(typ, cfg)
+		client, err = gocodex.NewClient(typ, cfg)
 		if err != nil {
 			logger.LogError("create client error, need retry", err)
 			time.Sleep(1 * time.Second)
