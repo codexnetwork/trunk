@@ -3,7 +3,7 @@ package main
 import (
 	"errors"
 
-	"github.com/fanyang1988/force-block-ev/blockdb"
+	"github.com/codexnetwork/trunk/blockdb"
 	"github.com/codexnetwork/codex-go/p2p"
 
 	"github.com/codexnetwork/trunk/cfg"
