@@ -6,13 +6,13 @@ import (
 	"runtime"
 	"time"
 
+	"github.com/eosforce/goforceio/ecc"
+	"github.com/eosforce/goforceio/p2p"
+
 	"github.com/codexnetwork/trunk/cfg"
 	"github.com/codexnetwork/trunk/logger"
 	"github.com/codexnetwork/trunk/relay"
 	"github.com/codexnetwork/trunk/side"
-	"github.com/eosforce/goforceio/ecc"
-	"github.com/eosforce/goforceio/p2p"
-	blockevlog "github.com/fanyang1988/force-block-ev/log"
 )
 
 var configPath = flag.String("cfg", "./config.json", "config file path")
@@ -28,7 +28,6 @@ func main() {
 
 	if *isDebug {
 		p2p.EnableP2PLogging()
-		blockevlog.SetLogger(logger.Logger())
 	}
 
 	defer func() {
